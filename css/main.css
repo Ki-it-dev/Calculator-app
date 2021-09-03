@@ -214,14 +214,21 @@ body {
         margin: 20px;
     }
     .text, .textTheme {
-        font-size: 16px;
+        font-size: 20px;
     }
     .textCalc {
         position: relative;
         top: 8px;
+        font-size: 24px;
     }
     .container .numberBtn .del, .container .numberBtn .clear {
         font-size: 20px;
+    }
+    .swithcTheme{
+        top: -10px;
+    }
+    .textTitle{
+        line-height: 18px;
     }
 }
 
@@ -229,12 +236,12 @@ body {
     .container .calculater .numberBtn {
         grid-template-columns: 48px 48px 48px 48px;
         grid-template-rows: 40px 40px 40px 40px;
-        font-size: 16px;
+        font-size: 20px;
     }
     .container .calculater .number {
         line-height: 40px;
     }
     .container .numberBtn .del, .container .numberBtn .clear {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
