@@ -208,7 +208,7 @@ body {
 
 @media (max-width:735px) {
     .container .calculater .numberBtn {
-        grid-template-columns: 62px 62px 62px;
+        grid-template-columns: 60px 60px 60px;
     }
     .text {
         margin: 20px;
@@ -232,6 +232,20 @@ body {
     }
 }
 
+@media (max-width:320px){
+    .container .calculater .numberBtn{
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 40px 40px 40px 40px;
+        font-size: 20px;
+    }
+    .container .calculater .number{
+        line-height: 48px;
+    }
+    .container .numberBtn .del, .container .numberBtn .clear{
+        font-size: 16px;
+    }
+}
+
 @media (max-width:280px) {
     .container .calculater .numberBtn {
         grid-template-columns: 48px 48px 48px 48px;
@@ -242,6 +256,6 @@ body {
         line-height: 40px;
     }
     .container .numberBtn .del, .container .numberBtn .clear {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
