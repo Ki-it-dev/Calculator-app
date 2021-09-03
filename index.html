@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="" name="calc" class="calculater">
+      <div class="text">
+        <div class="textTitle">
+          <p class="textCalc">calc</p>
+        </div>
+        <div class="theme-switch-wrapper">
+          <div class="textTheme">Theme</div>
+          <div class="swithcTheme" id="theme-toggle" >
+            <div class="themeNumbers">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <div class="circleTheme" id="ballToggle" >
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="text" class="value" name="txt" readonly="">
+      <div class="numberBtn">
+        <span class="number" onclick="document.calc.txt.value +='7'">7</span>
+        <span class="number" onclick="document.calc.txt.value +='8'">8</span>
+        <span class="number" onclick="document.calc.txt.value +='9'">9</span>
+        <span class="number del"
+          onclick="calc.txt.value = calc.txt.value.substring(0,calc.txt.value.length-1) ">DEL</span>
+        <span class="number" onclick="document.calc.txt.value +='4'">4</span>
+        <span class="number" onclick="document.calc.txt.value +='5'">5</span>
+        <span class="number" onclick="document.calc.txt.value +='6'">6</span>
+        <span class="number plus" onclick="document.calc.txt.value +='+'">+</span>
+        <span class="number" onclick="document.calc.txt.value +='1'">1</span>
+        <span class="number" onclick="document.calc.txt.value +='2'">2</span>
+        <span class="number" onclick="document.calc.txt.value +='3'">3</span>
+        <span class="number" onclick="document.calc.txt.value +='-'">-</span>
+        <span class="number" onclick="document.calc.txt.value +='.'">.</span>
+        <span class="number zero" onclick="document.calc.txt.value +='0'">0</span>
+        <span class="number" onclick="document.calc.txt.value +='/'">/</span>
+        <span class="number" onclick="document.calc.txt.value +='*'">x</span>
+        <span class="number clear" onclick="document.calc.txt.value =''">RESERT</span>
+        <span class="number equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+      </div>
+
+    </form>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br>
+    Coded by <a href="#">Le Huu Nhat Khoa</a>.
+  </div> -->
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
